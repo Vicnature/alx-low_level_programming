@@ -28,13 +28,11 @@ int main(void)
 			if (a < 89)
 			{
 				putchar(',');
-				putchar(' ');
 			}
 		}
 
 		a++;
 	}
-	putchar('\n');
 
 	return (0);
 }

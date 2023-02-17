@@ -1,22 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Prints all numbers starting from 00 to 99
+ * main - Prints the numbers from 00 to 99, numbers separated by
+ *        a comma followed by a space, in ascending order.
  *
- * Return: 0.
+ * Return: Always 0.
  */
 int main(void)
 {
-	int dig1, dig2;
+	int digit1, digit2;
 
-	for (dig1 = 0; dig1 < 10; dig1++)
+	for (digit1 = 0; digit1 < 10; digit1++)
 	{
-		for (dig2 = 0; dig2 < 10; dig2++)
+		for (digit2 = 0; digit2 < 10; digit2++)
 		{
-			putchar((dig1 % 10) + '0');
-			putchar((dig2 % 10) + '0');
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
 
-			if (dig1 == 9 && dig2 == 9)
+			if (digit1 == 9 && digit2 == 9)
 				continue;
 			
 			putchar(',');

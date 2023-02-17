@@ -1,39 +1,21 @@
 #include <stdio.h>
+
 /**
- * main - initializes the program
- * Description: Print all possible lowercase combinations of 2 digits
- * Numbers must be separated by commas and a space.
- * 01 and 10 are considered as the same combination of the two digits.
- * Print only the smallest combination of two digits.
- * Numbers should be printed in ascending order, with two digits.
- * You are not allowed to use any variable of type `char`.
- * Return: 0
+ * main - Prints the alphabet in lowercase, and then in uppercase.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int a, b, c;
+	char letter;
 
-	a = 0;
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-	while (a < 100)
-	{
-		b = a % 10; /* singles digit */
-		c = a / 10; /* doubles digit */
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
 
-		if (c < b)
-		{
-			putchar(c + '0');
-			putchar(b + '0');
-
-			if (a < 89)
-			{
-				putchar(',');
-			}
-		}
-
-		a++;
-	}
+	putchar('\n');
 
 	return (0);
 }
-

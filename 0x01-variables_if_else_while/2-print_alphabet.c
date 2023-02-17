@@ -1,33 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - main block
- * Description: Print numbers from 0 to 99.
- * Numbers must be separated by commas followed by a space.
- * You can only use `putchar` to print to console.
- * You can only use `putchar` up to 5 times.
- * You are not allowed to use variables of type `char`.
- * Return: 0
+ * main - Prints the alphabet in lowercase, and then in uppercase.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
+	char letter;
 
-	for (a = 0; a < 100; a++)
-	{
-		b = a / 10;
-		c = a % 10;
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
 
-		putchar(b + '0');
-		putchar(c + '0');
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
 
-		if (a < 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-	}
 	putchar('\n');
 
 	return (0);

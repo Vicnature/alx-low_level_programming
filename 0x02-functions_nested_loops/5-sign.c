@@ -1,24 +1,21 @@
 #include "main.h"
-/**
- * sign - prints the sign of a number
- * n: number input
- * Return: 1 prints '+' if n > 0, 0 prints '0' if n = 0, -1 prints '-
- */
-int sign(int n)
-{
-	if (n > 0)
-	{
-		_putchar ('+');
-		return (1);
-	}
-	else if (n == 0)
-	{
-		_putchar ('0');
-		return (0);
-	}
-	else
-	{
-		_putchar ('-');
-		return (-1);
-	}
-}
+
+
+
+        /**
+
+         * _isalpha - checks for alphabetic character
+
+         * @c: the character to be checked
+
+         * Return: 1 if c is a letter, 0 otherwise
+
+         */
+
+        int _isalpha(int c)
+
+        {
+
+                return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+
+        }

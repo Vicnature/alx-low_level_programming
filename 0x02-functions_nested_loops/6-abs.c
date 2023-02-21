@@ -1,10 +1,29 @@
 #include "main.h"
-/**
- * val - a function that computes the absolute value of an integer
- * a: integer input
- * Return: a 
- */
-int val(int a)
-{
-	return (a * ((a > 0) - (a < 0)));
-}
+
+
+
+        /**
+
+         * _abs - computes the absolute value of an integer
+
+         * @n: the int to check
+
+         * Return: the absolute value of int
+
+         */
+
+        int _abs(int n)
+
+        {
+
+                if (n >= 0)
+
+                {
+
+                        return (n);
+
+                }
+
+                return (-n);
+
+        }

@@ -4,26 +4,18 @@
 
         /**
 
-         * _islower - check if char is lowercase
+         * _isalpha - checks for alphabetic character
 
-         * @c: is the char to be checked
+         * @c: the character to be checked
 
-         * Return: 1 if char is lowercase, otherwise 0.
+         * Return: 1 if c is a letter, 0 otherwise
 
          */
 
-
-
-        int _islower(int c)
+        int _isalpha(int c)
 
         {
 
-                if (c >= 'a' && c <= 'z')
-
-                        return (1);
-
-                else
-
-                        return (0);
+                return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 
         }

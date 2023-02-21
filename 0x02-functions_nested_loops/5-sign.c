@@ -4,18 +4,62 @@
 
         /**
 
-         * _isalpha - checks for alphabetic character
+         * main - check the code.
 
-         * @c: the character to be checked
+         *
 
-         * Return: 1 if c is a letter, 0 otherwise
+         * Return: Always 0.
 
          */
 
-        int _isalpha(int c)
+        int main(void)
 
         {
 
-                return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+            int r;
+
+
+
+            r = print_sign(98);
+
+            _putchar(',');
+
+            _putchar(' ');
+
+            _putchar(r + '0');
+
+            _putchar('\n');
+
+            r = print_sign(0);
+
+            _putchar(',');
+
+            _putchar(' ');
+
+            _putchar(r + '0');
+
+            _putchar('\n');
+
+            r = print_sign(0xff);
+
+            _putchar(',');
+
+            _putchar(' ');
+
+            _putchar(r + '0');
+
+            _putchar('\n');
+
+            r = print_sign(-1);
+
+            _putchar(',');
+
+            _putchar(' ');
+
+            _putchar(r + '0');
+
+            _putchar('\n');
+
+            return (0);
 
         }

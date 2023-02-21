@@ -1,19 +1,24 @@
 #include "main.h"
-/**
- * main - the start of the program
- *
- * Return: 0
- */
-int main(void)
-{
-	char *put = "_putchar";
+#include <unistd.h>
 
-	while (*put)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
+	 /**
 
-	return (0);
-}
+         * _putchar - writes the character c to stdout
+
+         * @c: The character to print
+
+         *
+
+         * Return: On success 1.
+
+         * On error, -1 is returned, and errno is set appropriately.
+
+         */
+
+        int _putchar(char c)
+
+        {
+
+                return (write(1, &c, 1));
+
+        }
